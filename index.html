@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio PPG | Nama Mahasiswa</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>   
+
+    
+
+
+</head>
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="ph-fill ph-graduation-cap"></i>
+                <span>Edu<span class="gradient-text">Port.</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#guru">Visi Guru</a></li>
+                <li><a href="#ppl">Perjalanan PPL</a></li>
+                <li><a href="#artefak">Artefak</a></li>
+                <li><a href="#refleksi">Refleksi</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================= HERO SECTION ========================= -->
+    <section id="home" class="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-text reveal-left">
+                <div class="badge">PPG Prajabatan 2026</div>
+                <h1>Membentuk Masa Depan Melalui <span class="gradient-text">Pendidikan Profesional</span></h1>
+                <p>Website ini merupakan dokumentasi perjalanan transformatif saya selama Praktik Pengalaman Lapangan (PPL). Dari observasi hingga menjadi guru yang mandiri, adaptif, dan reflektif.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#artefak" class="btn btn-primary">Lihat Artefak <i class="ph ph-arrow-right"></i></a>
+                    <a href="#profil" class="btn btn-outline">Profil Saya</a>
+                </div>
+            </div>
+            
+            <div class="hero-image reveal-right">
+                <div class="image-wrapper">
+                    <img src="assets/images/profile.png" alt="Foto Profil Mahasiswa">
+                    <div class="floating-card top-left">
+                        <i class="ph-fill ph-student"></i>
+                        <span>Teknik Komputer</span>
+                    </div>
+                    <div class="floating-card bottom-right">
+                        <i class="ph-fill ph-buildings"></i>
+                        <span>SMKN 13 Bandung</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= PROFIL ========================= -->
+    <section id="profil" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Profil & Latar Belakang</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="profil-grid reveal-up">
+                <div class="profil-card modern-card">
+                    <i class="ph-duotone ph-map-pin-line icon-large"></i>
+                    <h3>Asal Daerah</h3>
+                    <p>Saya berasal dari <b>[Nama Daerah]</b>. Daerah yang memiliki keunikan berupa [Keunikan] yang membentuk karakter dan resiliensi saya.</p>
+                </div>
+                <div class="profil-card modern-card">
+                    <i class="ph-duotone ph-lightbulb icon-large"></i>
+                    <h3>Inspirasi</h3>
+                    <p>Lingkungan tempat saya tumbuh mengajarkan bahwa pendidikan adalah kunci membangun kualitas manusia, yang memotivasi saya menjadi pendidik.</p>
+                </div>
+                <div class="profil-card modern-card">
+                    <i class="ph-duotone ph-target icon-large"></i>
+                    <h3>Tujuan</h3>
+                    <p>Menjadi guru profesional yang tidak hanya menguasai ilmu, tapi juga memahami peserta didik dan menciptakan pembelajaran bermakna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= TENTANG SAYA ========================= -->
+    <section id="tentang" class="about-section section-padding">
+        <div class="container about-grid">
+            
+            <!-- Bagian Kiri: Teks (Animasi dari Kiri) -->
+            <div class="about-text reveal-left">
+                <h2>Tentang Saya</h2>
+                <div class="line-gradient"></div>
+                
+                <p>Saya merupakan mahasiswa PPG UPI pada bidang <strong>Pengembangan Perangkat Lunak dan Gim (PPLG)</strong>.</p>
+                
+                <p>Melalui rangkaian perkuliahan dan pengalaman PPL, saya belajar memahami peserta didik secara mendalam, merancang pembelajaran yang adaptif, melaksanakan pembelajaran yang bermakna, serta secara konsisten melakukan refleksi untuk terus mengembangkan kompetensi sebagai pendidik di era digital.</p>
+            </div>
+
+            <!-- Bagian Kanan: Card Identitas (Animasi dari Kanan) -->
+            <div class="identity-wrapper reveal-right">
+                <div class="identity-title">MY TEACHER IDENTITY</div>
+                
+                <!-- Card 1 -->
+                <div class="identity-card">
+                    <div class="icon-box"><i class="ph-duotone ph-shield-check"></i></div>
+                    <div class="identity-content">
+                        <h4>Tegas, Tapi Tidak Galak</h4>
+                        <p>Membangun kedisiplinan dengan prinsip dan konsistensi, bukan intimidasi.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="identity-card">
+                    <div class="icon-box"><i class="ph-duotone ph-users"></i></div>
+                    <div class="identity-content">
+                        <h4>Disegani, Tapi Tetap Dekat</h4>
+                        <p>Menjaga wibawa sebagai guru sekaligus menjadi fasilitator yang mudah didekati siswa.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="identity-card">
+                    <div class="icon-box"><i class="ph-duotone ph-rocket-launch"></i></div>
+                    <div class="identity-content">
+                        <h4>Mau Terus Berkembang</h4>
+                        <p>Memiliki growth mindset untuk terus beradaptasi dengan perkembangan teknologi edukasi.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========================= IDENTITAS GURU ========================= -->
+    <section id="guru" class="section-padding bg-darker">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Model Guru Masa Depan</h2>
+                <p>Nilai-nilai yang saya pegang teguh sebagai pendidik profesional</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="skill-card reveal-up">
+                    <div class="card-icon"><i class="ph ph-laptop"></i></div>
+                    <h3>Adaptif Teknologi</h3>
+                    <p>Mengintegrasikan teknologi terkini sebagai media pembelajaran yang relevan dengan generasi digital untuk pengalaman belajar yang interaktif.</p>
+                </div>
+                <div class="skill-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-icon"><i class="ph ph-hands-clapping"></i></div>
+                    <h3>Guru Humanis</h3>
+                    <p>Menciptakan ruang kelas yang aman, inklusif, dan ramah anak. Memahami bahwa setiap siswa memiliki potensi unik yang harus dihargai.</p>
+                </div>
+                <div class="skill-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                    <h3>Pembelajar Sepanjang Hayat</h3>
+                    <p>Berkomitmen untuk terus merefleksikan praktik mengajar dan mengembangkan kompetensi melalui riset serta kolaborasi sejawat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= PERJALANAN PPL ========================= -->
+    <section id="ppl" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Perjalanan Praktik Lapangan</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline-container reveal-up">
+                <div class="timeline-track"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content modern-card">
+                        <span class="step">Tahap 01</span>
+                        <h3>Observasi Sekolah</h3>
+                        <p>Memahami budaya belajar, fasilitas, manajemen, dan karakteristik peserta didik secara komprehensif sebagai langkah awal PPL.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content modern-card">
+                        <span class="step">Tahap 02</span>
+                        <h3>Praktik Asistensi</h3>
+                        <p>Mendampingi Guru Pamong dalam merancang dan mengeksekusi pembelajaran, mengamati dinamika kelas secara langsung.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content modern-card">
+                        <span class="step">Tahap 03</span>
+                        <h3>Pembelajaran Terbimbing (Siklus 1-3)</h3>
+                        <p>Mulai memimpin kelas dengan bimbingan. Melalui 3 siklus, saya belajar manajemen waktu, diferensiasi, hingga perbaikan strategi mengajar.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content modern-card">
+                        <span class="step">Tahap 04</span>
+                        <h3>PPL Mandiri (Semester 2)</h3>
+                        <p>Bertanggung jawab penuh atas kelas. Merancang modul ajar, asesmen formatif, hingga evaluasi efektivitas pembelajaran secara mandiri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= ARTEFAK ========================= -->
+<section id="artefak" class="section-padding bg-darker">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2>Artefak Pembelajaran</h2>
+            <p>Dokumen bukti pelaksanaan pengajaran dan evaluasi</p>
+            <div class="line"></div>
+        </div>
+
+        <!-- Tab Filter Kategori -->
+        <div class="artifact-tabs reveal-up">
+            <button class="tab-btn active" data-filter="all">Semua</button>
+            <button class="tab-btn" data-filter="modul">Modul & RPP</button>
+            <button class="tab-btn" data-filter="media">Media & LKPD</button>
+            <button class="tab-btn" data-filter="asesmen">Asesmen & Evaluasi</button>
+        </div>
+
+        <!-- Grid Kartu Artefak -->
+        <div class="artifact-grid reveal-up">
+            
+
+            <!-- Dokumen 1 -->
+            <div class="artifact-card" data-category="modul" data-flipbook="assets/pdf/LK.1.PPLT.pdf">
+                <div class="artifact-glow"></div>
+                <i class="ph-duotone ph-file-pdf"></i>
+                <div class="artifact-info">
+                    <h3>Modul Ajar Pembelajaran 1</h3>
+                    <p>Berbasis TaRL dan CRT pada materi PPLG.</p>
+                </div>
+                <span class="btn-text">Buka Flipbook <i class="ph ph-arrow-right"></i></span>
+            </div>
+
+            <!-- Dokumen 2 -->
+            <div class="artifact-card" data-category="media" data-flipbook="https://heyzine.com/flip-book/sample2.html">
+                <div class="artifact-glow"></div>
+                <i class="ph-duotone ph-monitor-play"></i>
+                <div class="artifact-info">
+                    <h3>LKPD Interaktif Siklus 1</h3>
+                    <p>Lembar kerja berbasis proyek untuk peserta didik.</p>
+                </div>
+                <span class="btn-text">Buka Flipbook <i class="ph ph-arrow-right"></i></span>
+            </div>
+
+            <!-- Dokumen 3 -->
+            <div class="artifact-card" data-category="asesmen" data-flipbook="https://heyzine.com/flip-book/sample3.html">
+                <div class="artifact-glow"></div>
+                <i class="ph-duotone ph-clipboard-text"></i>
+                <div class="artifact-info">
+                    <h3>Rubrik Penilaian DPL</h3>
+                    <p>Hasil evaluasi dan masukan dari Dosen Pembimbing.</p>
+                </div>
+                <span class="btn-text">Buka Flipbook <i class="ph ph-arrow-right"></i></span>
+            </div>
+            
+            <!-- Tambahkan file lain sesukamu menggunakan format .artifact-card di atas -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal Pop-up Universal (Tempat Flipbook Tampil) -->
+<div id="flipbook-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <!-- GANTI IFRAME DENGAN DIV INI -->
+            <div id="pdf-flipbook-container"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- ========================= REFLEKSI (4C & TRANSFORMASI) ========================= -->
+    <section id="refleksi" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Refleksi & Transformasi Diri</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- 4C Frame -->
+            <div class="four-c-grid reveal-up">
+                <div class="c-card modern-card">
+                    <div class="c-header">
+                        <h2>01</h2>
+                        <h3>Connection</h3>
+                    </div>
+                    <p>Mengaitkan teori pedagogi kampus (Constructivism) dengan realitas kelas yang kompleks.</p>
+                </div>
+                <div class="c-card modern-card">
+                    <div class="c-header">
+                        <h2>02</h2>
+                        <h3>Challenge</h3>
+                    </div>
+                    <p>Menghadapi tantangan diferensiasi siswa dan mengelola motivasi belajar di jam-jam rawan.</p>
+                </div>
+                <div class="c-card modern-card">
+                    <div class="c-header">
+                        <h2>03</h2>
+                        <h3>Concept</h3>
+                    </div>
+                    <p>Menerapkan pendekatan <i>Student-Centered Learning</i> dan evaluasi menggunakan asesmen formatif-sumatif.</p>
+                </div>
+                <div class="c-card modern-card">
+                    <div class="c-header">
+                        <h2>04</h2>
+                        <h3>Change</h3>
+                    </div>
+                    <p>Perubahan pada cara menyusun RPP yang lebih adaptif, fleksibel, serta peningkatan komunikasi empati dengan siswa.</p>
+                </div>
+            </div>
+
+            <!-- Before After -->
+            <div class="transformation-wrapper reveal-up" style="margin-top: 60px;">
+                <h3 class="text-center" style="margin-bottom: 30px; font-family: 'Poppins';">Transformasi Mindset</h3>
+                <div class="compare-box">
+                    <div class="compare-card before">
+                        <h4><i class="ph-fill ph-x-circle" style="color: #ef4444;"></i> Sebelum PPL</h4>
+                        <ul>
+                            <li>Fokus mengejar ketuntasan materi / silabus.</li>
+                            <li>Menganggap semua siswa memiliki gaya belajar sama.</li>
+                            <li>Refleksi hanya sekadar formalitas akhir.</li>
+                        </ul>
+                    </div>
+                    <div class="compare-divider">
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </div>
+                    <div class="compare-card after">
+                        <h4><i class="ph-fill ph-check-circle" style="color: #10b981;"></i> Setelah PPL</h4>
+                        <ul>
+                            <li>Fokus pada pemahaman dan proses belajar siswa.</li>
+                            <li>Merancang pembelajaran berdiferensiasi.</li>
+                            <li>Menjadikan refleksi sebagai basis perbaikan esok hari.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Edu<span class="gradient-text">Port.</span></h3>
+                <p>E-Portfolio PPG Prajabatan 2026.<br>Menjadi guru profesional pembelajar sepanjang hayat.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="ph-fill ph-envelope-simple"></i></a>
+                <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                <a href="#"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2026</span> [Nama Mahasiswa]. Didesain untuk Tugas Akhir PPG.</p>
+        </div>
+    </footer>
+
+    <div id="flipbook-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- Container tempat PDF dirender menjadi Flipbook -->
+                <div id="pdf-flipbook-container" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+    <script src="js/flipbook.js"></script>
+</body>
+</html>
